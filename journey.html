@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waseem Irfan - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="icon" type="image/png" href="./assets/profile-pic.png">
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="header-container"></div>
+
+        <section id="journey">
+            <!-- <h1 class="title">My Journey</h1> -->
+
+            <div class="journey-toggle">
+                <button class="toggle-btn active" onclick="showSection('experience')">
+                    <i class="fas fa-graduation-cap"></i> Experience
+                </button>
+                <button class="toggle-btn" onclick="showSection('education')">
+                    <i class="fas fa-briefcase"></i> Education
+                </button>
+            </div>
+
+            <div class="journey-container">
+                <!-- Education Section -->
+                <div id="education" class="journey-section">
+                    <!-- NUST -->
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <a href="https://nust.edu.pk/" target="_blank">
+                                <img src="./assets/icons/nust.png" alt="NUST" class="timeline-logo" />
+                            </a>
+                            <div class="timeline-title">
+                                <h2>Bachelor of Mechatronics Engineering</h2>
+                                <div class="timeline-date">2021 - 2025</div>
+                                <div class="timeline-position">National University of Sciences and Technology, Pakistan
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-details">
+                            <ul>
+                                <li><strong>Major Coursework:</strong> Mechatronics and Robotics </li>
+                                <li><strong>Minor Coursework:</strong> Machine Learning, Digital Image Processing,
+                                    Applied Robotics</li>
+                                <li><strong>Global Technical Workshop:</strong> Attended 5th International Workshop on
+                                    Functional
+                                    Reverse Engineering of Machine Tools (GIK Institute, Pakistan)</li>
+                                <li><strong>Thesis (Capstone Project):</strong> Modular Self-reconfigurable Robotic
+                                    System - A robotic system capable of performing diverse tasks by rearranging its
+                                    modules into different configurations.</li>
+                                <li><strong>GPA:</strong> 3.05/4.00</li>
+                            </ul>
+                            <div class="award-badge">
+                                <i class="fas fa-award award-icon"></i>
+                                <span><strong>Best Product Design Award</strong> Awarded Best Design Project Award at
+                                    the NUST-CEME
+                                    Hackathon 2023.</span>
+                            </div>
+                            <!-- <div class="award-badge">
+                <i class="fas fa-award award-icon"></i>
+                <span><strong>2x Distinguished Student Awards:</strong> Received for securing SGPA > 3.5 in 4 consecutive semesters</span>
+              </div> -->
+                        </div>
+                    </div>
+
+                    <!-- GCU Lahore -->
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <a href="https://gcu.edu.pk/" target="_blank">
+                                <img src="./assets/icons/kips.png" alt="GCU Lahore" class="timeline-logo" />
+                            </a>
+                            <div class="timeline-title">
+                                <h2>Pre-Engineering (Intermediate)</h2>
+                                <div class="timeline-date">2018 - 2020</div>
+                                <div class="timeline-position">KIPS College, Gujranwala</div>
+                            </div>
+                        </div>
+                        <div class="timeline-details">
+                            <ul>
+                                <li><strong>External Grade:</strong> A+ <strong>Internal Grade:</strong> A</li>
+                                <li>Class representative junior and senior year</li>
+                                <li>Member of Sports Club</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Section -->
+                <div id="experience" class="journey-section active">
+                    <!-- Example Experience Card 1 -->
+                    <!-- <div class="timeline-card">
+            <div class="timeline-header">
+              <a href="#" target="_blank">
+                <img src="./assets/icons/software-motion.png" alt="Software Motion" class="timeline-logo"/>
+              </a>
+              <div class="timeline-title">
+                <h2>Algorithm Engineer (Sensor Fusion)</h2>
+                <div class="timeline-date">Dec 2024 - Present</div>
+                <div class="timeline-position">Software Motion</div>
+              </div>
+            </div>
+            <div class="timeline-details">
+              <ul>
+                <li>Contributing to object and ego-motion modules of L-2 ADAS by fusing camera and radar data for ACC, AEB, and LCC</li>
+                <li>Developed algorithms for lane lines fusion (Kalman Filters) and tracking (Track-to-Track Association) for LAC and LDW using C</li>
+              </ul>
+            </div>
+          </div> -->
+
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <a href="#" target="_blank">
+                                <img src="./assets/icons/cowlar-design-studio.svg" alt="Cowlar Design Studio"
+                                    class="timeline-logo" />
+                            </a>
+                            <div class="timeline-title">
+                                <h2>Embedded Design Engineer</h2>
+                                <div class="timeline-date">July 2024 - October 2024</div>
+                                <div class="timeline-position">Cowlar Design Studio</div>
+                            </div>
+                        </div>
+                        <div class="timeline-details">
+                            <ul>
+                                <li>Collaborated with cross-functional teams of 30+ professionals and contributed to
+                                    exploring
+                                    international market opportunities.</li>
+                                <li>Developed low-level STM32 driver APIs in C++, leveraging OOP to enhance modularity,
+                                    scalability, and
+                                    reduce overall development time.</li>
+                                <li>Engineered an ESP32-S3-based smart kitchen dashboard, deployed in restaurants across
+                                    Qatar,
+                                    automating order tracking and reducing processing time by 30%, while cutting
+                                    operational costs by 45%.
+                                </li>
+                                <li>Validated SPI, UART, and CAN communication protocols using logic analyzers and
+                                    oscilloscopes; built
+                                    cross-platform sensor libraries to ensure reliable and portable system performance.
+                                </li>
+
+                            </ul>
+                            <!-- <div class="award-badge">
+                <i class="fas fa-award award-icon"></i>
+                <span><strong>Houston Award:</strong> Awarded for exceptional leadership and performance in industrial autoamtion sector</span>
+              </div> -->
+                        </div>
+                    </div>
+
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <a href="#" target="_blank">
+                                <img src="./assets/icons/cowlar-design-studio.svg" alt="Cowlar Design Studio"
+                                    class="timeline-logo" />
+                            </a>
+                            <div class="timeline-title">
+                                <h2>Electronic Design Engineer</h2>
+                                <div class="timeline-date">July 2023 - September 2023</div>
+                                <div class="timeline-position">Cowlar Design Studio</div>
+                            </div>
+                        </div>
+                        <div class="timeline-details">
+                            <ul>
+                                <li>Designed and built an automotive ignition coil diagnostic tool using the PADAUK
+                                    PMC232 MCU, capable of identifying faulty coils with over 95% accuracy, leading to
+                                    successful Demo.</li>
+                                <li>
+                                    Gained hands-on expertise in reading schematics, datasheets, and PCB design;
+                                    proficient in SMD soldering, component selection, and hardware debugging.
+                                </li>
+                                <li>
+                                    Applied core principles of embedded hardware design to lead the development of
+                                    innovative test systems and prototyping workflows within tight timelines.
+                                </li>
+                            </ul>
+                            <!-- <div class="award-badge">
+                <i class="fas fa-award award-icon"></i>
+                <span><strong>Trailblazer:</strong> Honored with Trailblazer title after first self-presentation on
+                  annual design retreat</span>
+              </div> -->
+                        </div>
+                    </div>
+
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <a href="#" target="_blank">
+                                <img src="./assets/icons/rac_ceme_nust_logo.jpg" alt="NUST RAC" class="timeline-logo" />
+                            </a>
+                            <div class="timeline-title">
+                                <h2>Technical Assistant</h2>
+                                <div class="timeline-date">July 2023 - May 2024</div>
+                                <div class="timeline-position">NUST Robotics & Automation Club</div>
+                            </div>
+                        </div>
+                        <div class="timeline-details">
+                            <ul>
+                                <li> Mentored
+                                    150+ cross-departmental students by leading robotics initiatives and organizing
+                                    workshops on
+                                    3D printing and embedded systems.</li>
+                                <li>
+                                    Provided technical guidance and hands-on support in multiple student-led engineering projects, fostering interdisciplinary technical growth.
+                                </li>
+                            </ul>
+                            <!-- <div class="award-badge">
+                <i class="fas fa-award award-icon"></i>
+                <span><strong>Trailblazer:</strong> Honored with Trailblazer title after first self-presentation on
+                  annual design retreat</span>
+              </div> -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div id="footer-container"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/components/header.js"></script>
+    <script src="js/components/footer.js"></script>
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.journey-section').forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Show selected section
+            document.getElementById(sectionId).classList.add('active');
+
+            // Update active button
+            document.querySelectorAll('.toggle-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.currentTarget.classList.add('active');
+        }
+
+        // Initialize with education section visible
+        document.addEventListener('DOMContentLoaded', function () {
+            // Animate timeline cards
+            const cards = document.querySelectorAll('.timeline-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transitionDelay = `${index * 0.1}s`;
+
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 500 + (index * 100));
+            });
+        });
+    </script>
+</body>
+
+</html>

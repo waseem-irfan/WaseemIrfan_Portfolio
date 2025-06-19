@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Waseem Irfan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/media-queries.css">
+  <link rel="icon" type="image/png" href="./assets/profile-pic.png">
+</head>
+
+<body>
+  <div id="page-container">
+    <div id="header-container"></div>
+
+    <section id="projects">
+      <div class="container">
+        <!-- <h1 class="title">My Projects</h1> -->
+        <p class="section__text__p1">
+          Every project is a dream project, so long as I'm learning.
+        </p>
+
+        <div class="project-filter-container">
+          <!-- <button class="btn btn-color-2 project-btn active" onclick="filterProjects('featured')">
+            <i class="fas fa-layer-group"></i> Featured
+          </button> -->
+          <button class="btn btn-color-2 project-btn active" onclick="filterProjects('all')">
+            <i class="fas fa-layer-group"></i> All Projects
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="filterProjects('robotics')">
+            <i class="fas fa-robot"></i> Robotics
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="filterProjects('embedded')">
+            <i class="fas fa-microchip"></i> Embedded
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="filterProjects('electronics')">
+            <i class="fas fa-project-diagram"></i> Electronics
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="filterProjects('software')">
+            <i class="fas fa-code"></i> Software
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="filterProjects('mechanical')">
+            <i class="fas fa-gear"></i> Mechanical
+          </button>
+        </div>
+
+        <div class="projects-grid" id="projects-container">
+          <!-- Robotics Project Example -->
+          <div class="project-card" data-category="embedded">
+            <div class="project-image-container">
+              <img src="assets/projects/indoor-localization.png" alt="Indoor Positioning" class="project-image">
+              <div class="image-overlay">
+                <a href="https://drive.google.com/file/d/1CYg9ZF7AZ3ZOsC0UCQQGj0G76DaUIyGs/view?usp=drive_link"
+                  class="overlay-icon" title="Demo Video"><i class="fas fa-play-circle"></i></a>
+                <!-- <a href="#" class="overlay-icon" title="GitHub Repository"><i class="fab fa-github"></i></a> -->
+                <!-- <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a> -->
+                <a href="#" class="overlay-icon" title="Industrial Project"><i class="fas fa-industry"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Indoor Localization System - <br> ( <i class="fas fa-broadcast-tower"></i> UWB
+                Technology )
+              </h3>
+              <p class="project-description">
+                Contributed to the development of a precise indoor localization system using Ultra-Wideband (UWB)
+                technology based on the DW3000 chip. Implemented trilateration principles to accurately determine the
+                position of objects within indoor environments.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">C</span>
+                <span class="project-tag">C++</span>
+                <span class="project-tag">UWB</span>
+                <span class="project-tag">Trilateration</span>
+                <span class="project-tag">Localization</span>
+                <span class="project-tag">Qorovo's DW3000 chip</span>
+                <span class="project-tag">SPI</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="robotics featured">
+            <div class="project-image-container">
+              <img src="assets/projects/fruit_plucker.gif" alt="Fruit Plucker" class="project-image">
+              <div class="image-overlay">
+                <a href="https://drive.google.com/file/d/1H5LkHmQIjEIjYfOhthvk85FKEjXKcfQF/view?usp=sharing"
+                  class="overlay-icon" title="Demo Video"><i class="fas fa-play-circle"></i></a>
+                <!-- <a href="#" class="overlay-icon" title="GitHub Repository"><i class="fab fa-github"></i></a> -->
+                <!-- <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a> -->
+                <a href="#" class="overlay-icon" title="Academic Project"><i class="fas fa-book"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Fruit Plucking Robot</h3>
+              <p class="project-description">
+                Developed a fruit-plucking robot using the EV3 kit, equipped with a line-following mechanism and a
+                gripper extension to autonomously identify and pluck fruits from trees.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Problem Solving</span>
+                <span class="project-tag">Sensors</span>
+                <span class="project-tag">Block coding</span>
+                <span class="project-tag">ev3-kit</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="robotics featured">
+            <div class="project-image-container">
+              <img src="assets/projects/pick_place.gif" alt="Warehouse Management Robot" class="project-image">
+              <div class="image-overlay">
+                <a href="https://drive.google.com/file/d/1GVwbvR52Qd7xFjoNsQCzL3-iGEAOjNkn/view?usp=sharing"
+                  class="overlay-icon" title="Demo Video"><i class="fas fa-play-circle"></i></a>
+                <a href="https://github.com/waseem-irfan/NERC_Module" class="overlay-icon" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                <!-- <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a> -->
+                <a href="#" class="overlay-icon" title="Academic Project"><i class="fas fa-book"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Indigenous Warehouse Management Robot</h3>
+              <p class="project-description">
+                Engineered an autonomous pick-and-place robot for the NERC 2024, featuring a 5-DoF robotic mechanism
+                that scans a grid map to pick and place multiple objects in parallel, achieving 6x faster performance
+                and significantly boosting productivity and operational efficiency. A prototype to automate warehouse
+                workflows.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">3D Printing</span>
+                <span class="project-tag">SolidWorks</span>
+                <span class="project-tag">ATMega 328P</span>
+                <span class="project-tag">C/C++</span>
+                <span class="project-tag">Line/Wall Following</span>
+                <span class="project-tag">PID Control</span>
+                <span class="project-tag">Machine Design</span>
+                <span class="project-tag">Structural Analysis</span>
+                <span class="project-tag">Dual H-Bridge Design</span>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="robotics featured">
+            <div class="project-image-container">
+              <img src="assets/projects/msrr.gif" alt="Modular Robotic System" class="project-image">
+              <div class="image-overlay">
+                <a href="https://drive.google.com/file/d/1PIJIEtwVys8-C6VoFDCwQ9ve58AW-0Q8/view?usp=sharing"
+                  class="overlay-icon" title="Demo Video"><i class="fas fa-play-circle"></i></a>
+                <a href="https://github.com/waseem-irfan/Modular_Robot_Firmware_ESP32_IDF" class="overlay-icon" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                <a href="https://drive.google.com/drive/folders/1IilYTNEdTlR9JdOhTgk0SAAlmk4gQjtR" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a>
+                <a href="#" class="overlay-icon" title="Academic Project"><i class="fas fa-book"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Modular Self-Reconfigurable Robotic System</h3>
+              <p class="project-description">
+                Developed ESP32-based modular self-reconfigurable robots featuring autonomous docking, inter-module
+                communication, and collaborative task execution. Each module integrates UWB (BU04) for indoor
+                positioning, MPU6050 for orientation, and N20 encoder motors with PID control. Powered by Li-Po
+                batteries with onboard BMS and magnetic docking for seamless reconfiguration.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">BU04-Kit</span>
+                <span class="project-tag">ESP32</span>
+                <span class="project-tag">N55 Magnets</span>
+                <span class="project-tag">MPU-6050</span>
+                <span class="project-tag">L9110S Motor driver</span>
+                <span class="project-tag">N20 Encoder motors</span>
+                <span class="project-tag">BMS</span>
+                <span class="project-tag">FDM</span>
+                <span class="project-tag">MQTT</span>
+                <span class="project-tag">Web Development </span>
+                <span class="project-tag">FreeRTOS </span>
+                <span class="project-tag">I2C </span>
+                <span class="project-tag">SPI </span>
+
+              </div>
+            </div>
+          </div>
+          <!-- Embedded Project Example -->
+          <div class="project-card" data-category="electronics">
+            <div class="project-image-container">
+              <img src="assets/projects/ignition_coil.jpeg" alt="Ignition Coil Tester" class="project-image">
+              <div class="image-overlay">
+                <!-- <a href="#" class="overlay-icon" title="Demo Video"><i class="fas fa-link"></i></a> -->
+                <!-- <a href="#" class="overlay-icon" title="GitHub Repository"><i class="fab fa-github"></i></a> -->
+                <!-- <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a> -->
+                <a href="#" class="overlay-icon" title="Industrial Project"><i class="fas fa-industry"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Ignition Coil Tester
+              </h3>
+              <p class="project-description">
+                Designed an automotive diagnostic tool (Ignition coil tester) using the PADAUK PMC232 microcontroller to
+                evaluate vehicle ignition coils, distinguishing functional and faulty coils with precision.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">PADAUK PMC232</span>
+                <span class="project-tag">CNC (G-code, M-code) </span>
+                <span class="project-tag"> Circuit Design </span>
+                <span class="project-tag"> Altium Designer </span>
+                <span class="project-tag"> Testing & Debugging </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="robotics featured">
+            <div class="project-image-container">
+              <img src="assets/projects/intel_mech_hand.gif" alt="Mechanical Hand" class="project-image">
+              <div class="image-overlay">
+                <a href="https://drive.google.com/file/d/1ET8t6K9EvFxvdDXna7K9nXfA-3DSFB4S/view?usp=sharing"
+                  class="overlay-icon" title="Demo Video"><i class="fas fa-play-circle"></i></a>
+                <a href="https://github.com/waseem-irfan/Mechanical_Arm_Gazebo" class="overlay-icon" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                <!-- <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a> -->
+                <a href="#" class="overlay-icon" title="Academic Project"><i class="fas fa-book"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Intelligent Mechanical Hand</h3>
+              <p class="project-description">
+                Created a URDF model using Xacro and ROS2 launch files to simulate a mechanical hand in Gazebo,
+                interfacing with real hardware via PCA9685 for precise servo control and real-time performance
+                validation.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">PCA9685</span>
+                <span class="project-tag">ESP32</span>
+                <span class="project-tag">ROS2</span>
+                <span class="project-tag">Gazebo</span>
+                <span class="project-tag">MQTT</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="electronics">
+            <div class="project-image-container">
+              <img src="assets/projects/hbridge1.jpeg" alt="H-Bridge" class="project-image">
+              <div class="image-overlay">
+                <a href="https://drive.google.com/file/d/1qs4kTeXr8QvCPphmdC46jQcRIdEGb1_D/view?usp=sharing"
+                  class="overlay-icon" title="Demo Video"><i class="fas fa-play-circle"></i></a>
+                <!-- <a href="#" class="overlay-icon" title="GitHub Repository"><i class="fab fa-github"></i></a> -->
+                <!-- <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a> -->
+                <a href="#" class="overlay-icon" title="Academic Project"><i class="fas fa-book"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">H-Bridge Motor Driver</h3>
+              <p class="project-description">
+                Crafted an H-Bridge for robot’s drive train, enabling reliable 24V operation with a 10A stall current
+                capacity, improving motor control efficiency and system performance.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Altium Designer</span>
+                <span class="project-tag">Analogue Electronics</span>
+                <span class="project-tag">IRF3205</span>
+                <span class="project-tag">IR2110 IC</span>
+                <span class="project-tag">Proteus</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-category="embedded">
+            <div class="project-image-container">
+              <img src="assets/projects/devBoard.jpeg" alt="8051 Dev Board" class="project-image">
+              <div class="image-overlay">
+                <a href="https://drive.google.com/drive/folders/17HU_xSuhhKI_gUwHc0Qf_QQnZsOOdr-4?usp=sharing"
+                  class="overlay-icon" title="Demo Video"><i class="fas fa-play-circle"></i></a>
+                <!-- <a href="#" class="overlay-icon" title="GitHub Repository"><i class="fab fa-github"></i></a> -->
+                <!-- <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a> -->
+                <a href="#" class="overlay-icon" title="Academic Project"><i class="fas fa-book"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">8051 Development Board</h3>
+              <p class="project-description">
+                Developed a custom 8051-based board from scratch with modes for quadratic equation solving, series
+                display, temperature conversion, & PWM output, using assembly language & interfacing with dip switch
+                boards.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Assembly</span>
+                <span class="project-tag">Embedded Systems</span>
+                <span class="project-tag">Electronics</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="electronics">
+            <div class="project-image-container">
+              <img src="assets/projects/logic_bot.png" alt="Logic Bot" class="project-image">
+              <div class="image-overlay">
+                <a href="https://drive.google.com/file/d/1sWEAz72Vrk1XwSiSUyEXdvb_9_dc39gQ/view?usp=sharing"
+                  class="overlay-icon" title="Demo Video"><i class="fas fa-play-circle"></i></a>
+                <!-- <a href="#" class="overlay-icon" title="GitHub Repository"><i class="fab fa-github"></i></a> -->
+                <!-- <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a> -->
+                <a href="#" class="overlay-icon" title="Academic Project"><i class="fas fa-book"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Logic Bot</h3>
+              <p class="project-description">
+                Developed a line-following robot, utilizing logic gates exclusively, showcasing innovation in robotics
+                by implementing a microcontroller-free approach.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Digital Logic Design</span>
+                <span class="project-tag">IR Sensors</span>
+                <span class="project-tag">L293D</span>
+                <span class="project-tag">Proteus</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="electronics">
+            <div class="project-image-container">
+              <img src="assets/projects/PWM_Ctrl.jpeg" alt="PWM Control" class="project-image">
+              <div class="image-overlay">
+                <a href="https://drive.google.com/file/d/1D4h15MzsqiwwL-4BJrr1g5VyrCXS75W5/view?usp=sharing"
+                  class="overlay-icon" title="Demo Video"><i class="fas fa-play-circle"></i></a>
+                <!-- <a href="#" class="overlay-icon" title="GitHub Repository"><i class="fab fa-github"></i></a> -->
+                <!-- <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a> -->
+                <a href="#" class="overlay-icon" title="Academic Project"><i class="fas fa-book"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Motor Speed Controller</h3>
+              <p class="project-description">
+                Developed a DC motor speed controller using a 555 timer in PWM mode, demonstrating analog control
+                principles and hands-on PCB design, fabrication, and testing skills.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">PWM Control</span>
+                <span class="project-tag">555 Timer</span>
+                <span class="project-tag">Proteus</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="embedded">
+            <div class="project-image-container">
+              <img src="assets/projects/kds.gif" alt="KDS" class="project-image">
+              <div class="image-overlay">
+                <a href="https://drive.google.com/file/d/13kkpRYwWe1qkGIriWkYyD-kOMyq0y3pj/view?usp=sharing"
+                  class="overlay-icon" title="Demo Video"><i class="fas fa-play-circle"></i></a>
+                <!-- <a href="#" class="overlay-icon" title="GitHub Repository"><i class="fab fa-github"></i></a> -->
+                <!-- <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a> -->
+                <a href="#" class="overlay-icon" title="Industrial Project"><i class="fas fa-industry"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Smart Kitchen Display System</h3>
+              <p class="project-description">
+                Developed an ESP32-S3 VGA based kitchen dashboard with real-time order display, hardware navigation, and
+                status updates, integrating a thermal printer and buzzer alert system to optimize workflow. This system
+                is actively deployed in Qatar reducing processing time by 30%, and cutting operational costs by 45%.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">LVGL</span>
+                <span class="project-tag">FreeRTOS</span>
+                <span class="project-tag">ESP32-S3 VGA board</span>
+                <span class="project-tag">UART</span>
+                <span class="project-tag">Thermal Printer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="embedded">
+            <div class="project-image-container">
+              <img src="assets/projects/smart_insole.jpeg" alt="Smart Insole" class="project-image">
+              <div class="image-overlay">
+                <!-- <a href="#" class="overlay-icon" title="Demo Video"><i
+                    class="fas fa-play-circle"></i></a> -->
+                <!-- <a href="#" class="overlay-icon" title="GitHub Repository"><i class="fab fa-github"></i></a> -->
+                <!-- <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a> -->
+                <a href="#" class="overlay-icon" title="Academic Project"><i class="fas fa-book"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Wearable Smart Sensing Insole</h3>
+              <p class="project-description">
+                Designed a compact, pressure and angle-sensing insole for real-time monitoring of foot posture and
+                weight distribution. Wirelessly transmits data to a mobile app for live tracking or post-session
+                analysis, helping users improve performance and alignment.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">MQTT</span>
+                <span class="project-tag">Pizoelectric Sensors</span>
+                <span class="project-tag">Capacitive Sensors</span>
+                <span class="project-tag">ESP32</span>
+                <span class="project-tag">FDM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Software Project Example -->
+          <div class="project-card" data-category="software">
+            <div class="project-image-container">
+              <img src="assets/projects/chess.gif" alt="Chess" class="project-image">
+              <div class="image-overlay">
+                <a href="https://drive.google.com/file/d/1wGDtF2EnOKUGSZ6vGRksAEBaaKdmt74Q/view?usp=sharing" class="overlay-icon" title="Demo Video"><i
+                    class="fas fa-play-circle"></i></a>
+                <a href="https://github.com/waseem-irfan/Chess" class="overlay-icon" title="GitHub Repository"><i
+                    class="fab fa-github"></i></a>
+                <!-- <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a> -->
+                <a href="#" class="overlay-icon" title="Academic Project"><i class="fas fa-book"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Chess Game</h3>
+              <p class="project-description">
+                Built a command-line based multiplayer chess game for Windows from scratch. Key features include
+                text-based graphics, interactive menus, game pause/resume, save/load functionality, and full support for
+                standard chess rules in multiplayer mode.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">C++</span>
+                <span class="project-tag">OOP</span>
+                <span class="project-tag">CMD Line GUI</span>
+                <span class="project-tag">Windows</span>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Mechanical Project Example -->
+          <div class="project-card" data-category="mechanical">
+            <div class="project-image-container">
+              <img src="assets/projects/industrial_arm.gif" alt="Industrial Robotic Arm" class="project-image">
+              <div class="image-overlay">
+                <!-- <a href="https://youtu.be/-rmqCQ1hFSs" class="overlay-icon" title="Demo Video"><i class="fas fa-play-circle"></i></a>
+                <a href="https://github.com/usamajahangir/Chess-2.0" class="overlay-icon" title="GitHub Repository"><i class="fab fa-github"></i></a> -->
+                <a href="https://drive.google.com/file/d/1UddcDjKtmDBKJ2S1VP3xNAD-PmPNpwzQ/view?usp=sharing" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a>
+                <a href="#" class="overlay-icon" title="Academic Project"><i class="fas fa-book"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Industrial Robotic Arm</h3>
+              <p class="project-description">
+                Designed a 3-DOF Industrial Robotic Arm with precise joint articulation for automated tasks.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">SolidWorks</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="mechanical">
+            <div class="project-image-container">
+              <img src="assets/projects/multiArmrobot.JPG" alt="Multi-Arm Robot" class="project-image">
+              <div class="image-overlay">
+                <!-- <a href="https://youtu.be/-rmqCQ1hFSs" class="overlay-icon" title="Demo Video"><i class="fas fa-play-circle"></i></a> -->
+                <!-- <a href="https://grabcad.com/library/colt-1911-16" class="overlay-icon" title="GrabCAD Model"><i
+                    class="fas fa-gear"></i></a> -->
+                <a href="https://drive.google.com/file/d/1SzrKV7rG_QVAZ1WJgdCd9P2GVAhIJE6N/view?usp=sharing" class="overlay-icon" title="Visualize"><i class="fas fa-eye"></i></a>
+                <a href="#" class="overlay-icon" title="Academic Project"><i class="fas fa-book"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">4 Arm Pick & Place Robot</h3>
+              <p class="project-description">
+                The Multi-Handed Pick and Place Robot is an advanced robotic system designed for efficient warehouse
+                automation, capable of handling multiple objects simultaneously.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">SolidWorks</span>
+                <span class="project-tag">Fused Desposition Modelling</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="mechanical">
+            <div class="project-image-container">
+              <img src="assets/projects/ARM.png" alt="Mechanical Arm" class="project-image">
+              <div class="image-overlay">
+                <a href="https://drive.google.com/file/d/1x7Qu6mS7OYancm2E_ma8guMFEjv-YFIi/view?usp=sharing" class="overlay-icon" title="Visualize"><i class="fas fa-eye"></i></a>
+                <!-- <a href="https://grabcad.com/library/colt-1911-16" class="overlay-icon" title="GrabCAD Model"><i
+                    class="fas fa-gear"></i></a> -->
+                <!-- <a href="#" class="overlay-icon" title="Project Details"><i class="fas fa-info-circle"></i></a> -->
+                <a href="#" class="overlay-icon" title="Academic Project"><i class="fas fa-book"></i></a>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Mechanical Arm</h3>
+              <p class="project-description">
+                This project involved designing a robotic arm in SolidWorks, analyzing its structural integrity in
+                Ansys, and building a physical prototype.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Ansys</span>
+                <span class="project-tag">Advance Workshop</span>
+                <span class="project-tag">SolidWorks</span>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <div id="footer-container"></div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/components/header.js"></script>
+  <script src="js/components/footer.js"></script>
+  <script src="js/components/projects.js"></script>
+
+</body>
+
+</html>
