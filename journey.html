@@ -129,9 +129,13 @@
                         </div>
                         <div class="timeline-details">
                             <ul>
-                                <li>Developing a Battery Management System (BMS) on STM32H755ZI-Q with cell voltage monitoring, SoC estimation, and pack state detection (Charging/Discharging/Idle).</li>
-                                <li>Implemented protection mechanisms, configurable BMS parameters, and integration of current/temperature sensing for reliable and safe battery pack operation.</li>
-                                <li>Integrated multi-protocol communication interfaces including Ethernet, iso-SPI, CAN, and UART for seamless connectivity and control.</li>
+                                <li>Architected and deployed the master control firmware for a bi-directional power dock, an energy conversion platform that enables controlled battery charging and discharging. Integrated the TI C2000 DSP for DC/AC inversion, closed-loop power regulation, and coordinated energy flow between the battery pack and external loads.</li>
+
+                                <li>Designed and implemented safety-critical pack–dock communication, real-time telemetry handling, protection interlocks, and a BLE-based over-the-air (OTA) update framework supporting firmware upgrades for the dock controller, battery pack, and TI C2000 DSP.</li>
+
+                                <li>Developed a Battery Management System (BMS) on the STM32H755ZITx featuring cell voltage monitoring through the LTC6804-2 battery monitoring IC, State of Charge (SoC) estimation, cell balancing, configurable protection thresholds, and intelligent pack state detection (Charging, Discharging, and Idle).</li>
+
+                                <li>Integrated Ethernet, iso-SPI, CAN, and UART communication interfaces to enable reliable battery monitoring, parameter configuration, telemetry exchange, and seamless interaction between the battery pack, power dock, and external applications.</li>
                             </ul>
                             <!-- <div class="award-badge">
                 <i class="fas fa-award award-icon"></i>
